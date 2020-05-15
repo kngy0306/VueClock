@@ -14,6 +14,9 @@
 <script>
 const zeroPadding = (num, digit) => {
   return (Array(digit).join("0") + num).slice(-digit);
+  // undefined 0 undefined + 5.slice(-2) 五月の場合
+  // [-2]0[-1]5 -> 05
+  // [-3]0[-2]1[-1]2 -> 12
 };
 
 export default {
