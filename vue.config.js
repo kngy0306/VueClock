@@ -1,5 +1,5 @@
 // vue.config.js
 module.exports = {
-  publicPath: "/ClockApp/",
+  publicPath: "./",
   outputDir: "docs",
 };
