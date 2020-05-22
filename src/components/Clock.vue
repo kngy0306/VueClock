@@ -104,7 +104,7 @@ export default {
   margin: 3px;
   color: #fff;
   font-family: "Roboto Mono", monospace;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1;
   background-color: #48b883;
   box-sizing: border-box;
@@ -117,7 +117,7 @@ export default {
   z-index: 1;
   color: #3a4a5e;
   font-family: "Teko", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   letter-spacing: 0.05em;
 }
 
