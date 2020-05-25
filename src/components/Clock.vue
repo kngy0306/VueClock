@@ -1,13 +1,11 @@
 <template>
   <div>
-    <div class="container">
-      <p class="location">{{ location }}</p>
-      <p class="date">{{ year }}/{{ month }}/{{ day }}</p>
-      <div class="time">
-        <p class="time-item hours">{{ hours }}</p>
-        <p class="time-item minutes">{{ minutes }}</p>
-        <p class="time-item seconds">{{ seconds }}</p>
-      </div>
+    <p class="location">{{ location }}</p>
+    <p class="date">{{ year }}/{{ month }}/{{ day }}</p>
+    <div class="time">
+      <p class="time-item hours">{{ hours }}</p>
+      <p class="time-item minutes">{{ minutes }}</p>
+      <p class="time-item seconds">{{ seconds }}</p>
     </div>
   </div>
 </template>
@@ -24,11 +22,11 @@ export default {
   props: [
     // props 親コンポーネントから値を受け取る
     "location",
-    "diff"
+    "diff",
   ],
   data() {
     return {
-      date: new Date()
+      date: new Date(),
     };
   },
   computed: {
@@ -49,7 +47,7 @@ export default {
     },
     seconds() {
       return zeroPadding(this.date.getSeconds(), 2);
-    }
+    },
   },
   mounted() {
     this.setDate();
@@ -59,8 +57,8 @@ export default {
     setDate() {
       this.date = new Date();
       this.date.setHours(this.date.getHours() + this.diff);
-    }
-  }
+    },
+  },
 };
 </script>
 
